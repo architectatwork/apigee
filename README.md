@@ -24,7 +24,7 @@ http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo --> Try 5 times an
 - Caching values (tested for performance): http://hireshoban-trial-test.apigee.net/kvm-cache  
 2. Security: TBD
 3. Mediation: JSON to XML, XML to JSON, XML Transform, Assign Message, Extra Variables, Key Value Map Operations
-   http://hireshoban-trial-prod.apigee.net/v1/xmltojson
+   http://hireshoban-trial-test.apigee.net/v1/xmltojson
 4. Extension: TBD
 
 Admin
@@ -38,9 +38,9 @@ http://hireshoban-trial-test.apigee.net/quota-specific-to-key?apikey=
 
 Tip: Sometimes APP is not revoked at management server immediately when you approve and revoke it repeatedly. If you want to revoke APP  immediately, you'll have to make sure that app is revoked at management server.
 First of all Revoke App from Admin portal and then Check Status of app through this command:
-curl -X GET -u <Admin-username>:<Password> "https://10.1.24.13:8080/v1/organizations/tp/developers/{Developer-email Or ID}/apps/{App-Name}"
+curl -X GET -u <Admin-username>:<Password> "https://<IP>:8080/v1/organizations/tp/developers/{Developer-email Or ID}/apps/{App-Name}"
 If Status is still Approved, then revoke app through this command:
-curl -X POST --header "Content-Type: application/octet-stream" -u <Admin-username>:<Password> "https://10.1.24.13:8080/v1/
+curl -X POST --header "Content-Type: application/octet-stream" -u <Admin-username>:<Password> "https://<IP>:8080/v1/
 organizations/tp/developers/{developer-email}/apps/{app-name}?action=revoke"
 
 - API Keys generated for Never, Duration and Date 
