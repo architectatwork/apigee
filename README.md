@@ -35,6 +35,7 @@ Admin
 - API Keys: Keys can be used to authorize use of API Products that developers use
 - Developers registers Apps in Apigee, each App can use 0 or more API Products. We can expire and revocation keys,  
 http://hireshoban-trial-test.apigee.net/quota-specific-to-key?apikey=
+
 Tip: Sometimes APP is not revoked at management server immediately when you approve and revoke it repeatedly. If you want to revoke APP  immediately, you'll have to make sure that app is revoked at management server.
 First of all Revoke App from Admin portal and then Check Status of app through this command:
 curl -X GET -u <Admin-username>:<Password> "https://10.1.24.13:8080/v1/organizations/tp/developers/{Developer-email Or ID}/apps/{App-Name}"
