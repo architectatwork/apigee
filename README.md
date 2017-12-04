@@ -52,4 +52,5 @@ Other
 -------------
 - Converted Apigee API spec to Open API spec (apigee2openapi), below is an example
 ![enter image description here](images/image.png)
-- Use postman for testing
+- Using Postman tool for testing: Below is the url to import my test cases from postman. 
+https://documenter.getpostman.com/view/3218907/collection/7EHbrwb
