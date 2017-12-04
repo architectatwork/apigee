@@ -12,14 +12,15 @@ Policies:
  - Rolling window: Checks number of requests previous hour( predefined time) (type=”rollingwindow”)
  - Flexi Type:  The timer starts when the first request is made and the count increase starting then. (type=”flexi”) ..Type is case sensitive
  - Conditional: Based on the query param (request.queryparam.appTeam) the quota can be configured different.
- - Error Handling:  Custom error message for quota overflow: Use Allow tag and AssignMessage
-http://hireshoban-trial-test.apigee.net/quotacustomerrormessage
+ - Error Handling:  Custom error message for quota overflow: Use Allow tag and AssignMessage 
+http://hireshoban-trial-test.apigee.net/quotacustomerrormessage --> Try 5 times and see the custom error message
  - Flow Variables: Leverage flow variables to intercept and display message for quota. 
-http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo
+http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo --> Try 5 times and see the quota availablity
 - Specific Quota with API Key: curl -i http://hireshoban-trial-test.apigee.net/quota-specific-to-key?apikey= 
-2. Security: 
+2. Security: TBD
 3. Mediation: JSON to XML, XML to JSON, XML Transform, Assign Message, Extra Variables, Key Value Map Operations
-4. Extension: 
+   http://hireshoban-trial-prod.apigee.net/v1/xmltojson
+4. Extension: TBD
 
 Admin related work:
 
