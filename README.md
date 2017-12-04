@@ -4,9 +4,9 @@ Apigee Edge:
 ------------
 
 ***
-Created/familiar with making and using policies, below are some ofthe examples:
+Using policies in Apigee:
 
-Polocies:
+Policies:
 1. Quota: These policies are defined in the preflow of proxy end point which is the first point of request interception
  - Default: Resets every start of minute (duration predefined) based on the time. (no type defined
  - Rolling window: Checks number of requests previous hour( predefined time) (type=”rollingwindow”)
