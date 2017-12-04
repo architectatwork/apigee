@@ -31,7 +31,7 @@ Admin
 - Environment variables for different environments (Prod, test etc), using in policies
 - Adding a value when returning to client. http://hireshoban-trial-test.apigee.net/v1/kvm-get
 - Creating and updating KVM : http://hireshoban-trial-test.apigee.net/kvm-create-update?kvmname=name&kvmvalue=shoban
-- Caching values (tested for performance): https://apigee.com/platform/hireshoban-trial/proxies/kvm-cache/   
+- Caching values (tested for performance): http://hireshoban-trial-test.apigee.net/kvm-cache  
 - API Keys: Keys can be used to authorize use of API Products that developers use
 - Developers registers Apps in Apigee, each App can use 0 or more API Products. We can expire and revocation keys,  
 http://hireshoban-trial-test.apigee.net/quota-specific-to-key?apikey=
