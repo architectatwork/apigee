@@ -7,7 +7,7 @@ Apigee Edge:
 ***
 
 
-Policies
+Policies 
 -------------
 1. Quota: These policies are defined in the preflow of proxy end point which is the first point of request interception
  - Default: Resets every start of minute (duration predefined) based on the time. (no type defined
@@ -26,6 +26,8 @@ http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo --> Try 5 times an
 3. Mediation: JSON to XML, XML to JSON, XML Transform, Assign Message, Extra Variables, Key Value Map Operations
    http://hireshoban-trial-test.apigee.net/v1/xmltojson
 4. Extension: TBD
+
+Note: All REST calls are configured to have either spike or quota limits. 
 
 Admin
 -------------
