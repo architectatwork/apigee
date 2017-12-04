@@ -1,12 +1,14 @@
+
 ***
 
 Apigee Edge:
 ------------
 
 ***
-Using policies in Apigee:
 
-Policies:
+
+Policies
+-------------
 1. Quota: These policies are defined in the preflow of proxy end point which is the first point of request interception
  - Default: Resets every start of minute (duration predefined) based on the time. (no type defined
  - Rolling window: Checks number of requests previous hour( predefined time) (type=”rollingwindow”)
@@ -22,7 +24,8 @@ http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo --> Try 5 times an
    http://hireshoban-trial-prod.apigee.net/v1/xmltojson
 4. Extension: TBD
 
-Admin related work:
+Admin
+-------------
 
 - Create maintain Users, Roles etc
 - Environment variables for different environments (Prod, test etc), using in policies
@@ -33,7 +36,10 @@ Admin related work:
 - Developers registers Apps in Apigee, each App can use 0 or more API Products. We can expire and revocation keys,  
 http://hireshoban-trial-test.apigee.net/quota-specific-to-key?apikey=
 - API Keys generated for Never, Duration and Date 
-- Other:
+
+
+Other
+-------------
 - Converted Apigee API spec to Open API spec (apigee2openapi), below is an example
 ![enter image description here](images/image.png)
-- Used postman for testing
+- Use postman for testing
