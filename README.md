@@ -19,6 +19,9 @@ http://hireshoban-trial-test.apigee.net/quotacustomerrormessage --> Try 5 times 
  - Flow Variables: Leverage flow variables to intercept and display message for quota. 
 http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo --> Try 5 times and see the quota availablity
 - Specific Quota with API Key: curl -i http://hireshoban-trial-test.apigee.net/quota-specific-to-key?apikey= 
+- Adding a value when returning to client. http://hireshoban-trial-test.apigee.net/v1/kvm-get
+- Creating and updating KVM : http://hireshoban-trial-test.apigee.net/kvm-create-update?kvmname=name&kvmvalue=shoban
+- Caching values (tested for performance): http://hireshoban-trial-test.apigee.net/kvm-cache  
 2. Security: TBD
 3. Mediation: JSON to XML, XML to JSON, XML Transform, Assign Message, Extra Variables, Key Value Map Operations
    http://hireshoban-trial-prod.apigee.net/v1/xmltojson
@@ -29,12 +32,16 @@ Admin
 
 - Create maintain Users, Roles etc
 - Environment variables for different environments (Prod, test etc), using in policies
-- Adding a value when returning to client. http://hireshoban-trial-test.apigee.net/v1/kvm-get
-- Creating and updating KVM : http://hireshoban-trial-test.apigee.net/kvm-create-update?kvmname=name&kvmvalue=shoban
-- Caching values (tested for performance): http://hireshoban-trial-test.apigee.net/kvm-cache  
 - API Keys: Keys can be used to authorize use of API Products that developers use
 - Developers registers Apps in Apigee, each App can use 0 or more API Products. We can expire and revocation keys,  
 http://hireshoban-trial-test.apigee.net/quota-specific-to-key?apikey=
+Tip: Sometimes APP is not revoked at management server immediately when you approve and revoke it repeatedly. If you want to revoke APP  immediately, you'll have to make sure that app is revoked at management server.
+First of all Revoke App from Admin portal and then Check Status of app through this command:
+curl -X GET -u <Admin-username>:<Password> "https://10.1.24.13:8080/v1/organizations/tp/developers/{Developer-email Or ID}/apps/{App-Name}"
+If Status is still Approved, then revoke app through this command:
+curl -X POST --header "Content-Type: application/octet-stream" -u <Admin-username>:<Password> "https://10.1.24.13:8080/v1/
+organizations/tp/developers/{developer-email}/apps/{app-name}?action=revoke"
+
 - API Keys generated for Never, Duration and Date 
 
 
