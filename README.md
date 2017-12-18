@@ -29,7 +29,7 @@ http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo --> Try 5 times an
 
 Note: All REST calls are configured to have either spike or quota limits. 
 
-Baas
+BaaS
 -------------
 
 - Create maintain Users, Roles etc
@@ -46,11 +46,11 @@ curl -X POST --header "Content-Type: application/octet-stream" -u <Admin-usernam
 organizations/tp/developers/{developer-email}/apps/{app-name}?action=revoke"
 
 - API Keys generated for Never, Duration and Date 
-- Create custom collection(entities) that are specific to your app. Data types like string, long, float, boolean, UUID, array, Object (JSON) are supported. 
-- Operations supported are  '<' or 'lt'	, '<=' or 'lte',  '=' or 'eq',	'>=' or 'gte'	,'>' or 'gt'	, not, contains, and, or
-- 
+- Data querying
+ - Create custom collection(entities) that are specific to your app. Data types like string, long, float, boolean, UUID, array, Object (JSON) are supported. 
+ - Operations supported are  '<' or 'lt'	, '<=' or 'lte',  '=' or 'eq',	'>=' or 'gte'	,'>' or 'gt'	, not, contains, and, or 
+ - Use SQL like queries to retrive data. ?ql= in URL indicates the start of query language. Functions like count(*) are not supported. 
 
-- Use SQL like queries to retrive data. ?ql= in URL indicates the start of query language. Functions like count(*) are not supported. 
 
 Other
 -------------
