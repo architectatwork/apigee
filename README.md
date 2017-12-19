@@ -16,7 +16,7 @@ Policies
  - Conditional: Based on the query param (request.queryparam.appTeam) the quota can be configured different.
  - Error Handling:  Custom error message for quota overflow: Use Allow tag and AssignMessage 
 http://hireshoban-trial-test.apigee.net/quotacustomerrormessage --> Try 5 times and see the custom error message
- - Flow Variables: Leverage flow variables to intercept and display message for quota. 
+ - Flow Variables: Leverage flow variables to intercept and display message for quota. (eg: request.queryparam.search where search is the query param)
 http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo --> Try 5 times and see the quota availablity
 - Specific Quota with API Key: curl -i http://hireshoban-trial-test.apigee.net/quota-specific-to-key?apikey= 
 - Adding a value when returning to client. http://hireshoban-trial-test.apigee.net/v1/kvm-get
