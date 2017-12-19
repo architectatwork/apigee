@@ -51,6 +51,15 @@ organizations/tp/developers/{developer-email}/apps/{app-name}?action=revoke"
   * Operations supported are  '<' or 'lt'	, '<=' or 'lte',  '=' or 'eq',	'>=' or 'gte'	,'>' or 'gt'	, not, contains, and, or 
   * Use SQL like queries to retrive data. ?ql= in URL indicates the start of query language. Functions like count(*) are not supported. 
 
+Microedge
+-------------
+- Naming convention to follow for the proxies is edgemicro_hello
+
+- Do not attach policies or make conditional flows in microgateway-aware proxies, because microgateway proxies never execute on Apigee Edge. Microgateway-aware proxies only serve to provide configuration information to your locally running Edge Microgateway and as a way to surface analytics data in the Edge analytics system. If you want to add policy functionality, such as quota, spike arrest, or OAuth2 security, you need to use Edge Microgateway plugins
+
+- Do not attach policies or make conditional flows in microgateway-aware proxies, because microgateway proxies never execute on Apigee Edge. Microgateway-aware proxies only serve to provide configuration information to your locally running Edge Microgateway and as a way to surface analytics data in the Edge analytics system. If you want to add policy functionality, such as quota, spike arrest, or OAuth2 security, you need to use Edge Microgateway plugins
+
+
 
 Other
 -------------
