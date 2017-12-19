@@ -26,7 +26,7 @@ http://hireshoban-trial-test.apigee.net/quotaflowvariabledemo --> Try 5 times an
 3. Mediation: JSON to XML, XML to JSON, XML Transform, Assign Message, Extra Variables, Key Value Map Operations
    http://hireshoban-trial-test.apigee.net/v1/xmltojson
 4. Extension: TBD
-
+- You can create new proxy by downloading api proxy and make changes, then upload back. 
 Note: All REST calls are configured to have either spike or quota limits. 
 
 BaaS
