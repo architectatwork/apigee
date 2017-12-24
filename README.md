@@ -45,7 +45,8 @@ If Status is still Approved, then revoke app through this command:
 curl -X POST --header "Content-Type: application/octet-stream" -u <Admin-username>:<Password> "https://<IP>:8080/v1/
 organizations/tp/developers/{developer-email}/apps/{app-name}?action=revoke"
 
-- API Keys generated for Never, Duration and Date 
+- API Keys generated for Never, Particular time Duration and Date
+- Create API product, generate keys and assign to developers.
 - Data querying
   * Create custom collection(entities) that are specific to your app. Data types like string, long, float, boolean, UUID, array, Object (JSON) are supported. 
   * Operations supported are  '<' or 'lt'	, '<=' or 'lte',  '=' or 'eq',	'>=' or 'gte'	,'>' or 'gt'	, not, contains, and, or 
